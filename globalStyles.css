@@ -1,0 +1,63 @@
+/*font family(style)*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Raleway:wght@400;500;600&display=swap');
+
+html{
+    font-size: 10px;        
+    overflow-x: hidden;      /*horizantal scroll bar not needed*/
+}
+
+:root {
+	--green-1: #26643b;
+	--green-2: #a2de96;          /*used globally custom properties where root is psudo-class*/
+	--lightGreen-1: #d6e5d8;
+	--lightGreen-2: #f5fcf4;
+	--black-1: #3b413a;
+	--black-2: #3f3c3c;
+	--black-3: #5b6359;
+	--white-1: #e8e8e8;
+}
+
+body
+{
+    background-color: var(--lightGreen-2);   
+    overflow-x: hidden;       
+}
+
+section {
+	padding: 100px 0;           /*vertcal space between content*/
+}
+
+@media only screen and (max-width: 768px) {
+	section {                                        /*if it in small device the padding become less */
+		padding: 50px 0;
+	}
+}
+
+/* make wesite responsive*/
+.container {
+	max-width: 1200px;              
+	width: 90%;
+	margin: 0 auto;            /*keep every thing in middle*/
+}
+
+img {
+	width: 90%;                 
+	height:90%;
+	object-fit: contain;        /*img fit in containe (keeps its aspect ratio, but is resized to fit within the given dimension)r*/
+}
+
+h1,h2,h3,h4 {
+	font-family: 'Poppins',sans-serif;
+}
+
+p {
+	font-family: 'Raleway',sans-serif;
+	font-weight: 400;            /*how much bold or light*/
+	line-height: 1.4em;         
+	font-size: 1.8rem;
+}
+
+a {
+	display: inline-block;     /*display list items horizontally*/
+	text-decoration: none;
+}
